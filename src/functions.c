@@ -1,11 +1,11 @@
 /*
-** functions.c for tetris in /Users/simonlejeune/Documents/Epitech/PSU_2016_tetris/src/
+** functions.c for tetris in /Users/simonlejeune/Unix_System_Prog/Sem2/PSU_2016_tetris/src/
 **
 ** Made by Simon LEJEUNE
 ** Login   <simon.lejeune@epitech.eu>
 **
-** Started on  Tue Feb 21 13:50:40 2017 Simon LEJEUNE
-** Last update Tue Feb 21 13:54:08 2017 Simon LEJEUNE
+** Started on  Tue Feb 21 15:28:29 2017 Simon LEJEUNE
+** Last update Tue Feb 21 15:28:37 2017 Simon LEJEUNE
 */
 
 #include <unistd.h>
