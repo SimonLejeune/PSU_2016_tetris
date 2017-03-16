@@ -1,31 +1,27 @@
 ##
-## Makefile for tetris in /Users/simonlejeune/Unix_System_Prog/Sem2/PSU_2016_tetris/
+## Makefile for hhh in /home/heroin/delivery/PSU/PSU_2016_tetris
+## 
+## Made by Heroin
+## Login   <victor.herouin@epitech.eu>
+## 
+## Started on  Tue Feb 21 09:40:24 2017 Heroin
+## Last update Mon Mar  6 16:54:44 2017 Heroin
 ##
-## Made by Simon LEJEUNE
-## Login   <simon.lejeune@epitech.eu>
-##
-## Started on  Tue Feb 21 15:29:27 2017 Simon LEJEUNE
-## Last update Tue Feb 21 16:36:06 2017 Simon LEJEUNE
-##
+SRC		=	src/main.c		\
+			src/functions.c		\
+			src/check_tetriminos.c	\
 
-SRC	=	src/main.c \
-	src/functions.c \
-	src/help.c \
-	src/window.c
+OBJ		=	$(SRC:.c=.o)
 
-OBJ	=	$(SRC:.c=.o)
+NAME		=	tetris
 
-NAME	=	tetris
+all		:	$(OBJ)
+			gcc -o $(NAME) $(OBJ) -lncurses -L. -lgnl
 
-all	:	$(NAME)
+clean		:
+			rm $(OBJ)
 
-$(NAME)	:	$(OBJ)
-	gcc $(OBJ) -o $(NAME) -lncurses -Wall
+fclean		:	clean
+			rm $(NAME)
 
-clean	:
-	rm -f $(OBJ)
-
-fclean	:	clean
-	rm -f $(NAME)
-
-re : fclean all
+re		:	fclean all

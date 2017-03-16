@@ -1,18 +1,22 @@
 /*
-** functions.c for tetris in /Users/simonlejeune/Unix_System_Prog/Sem2/PSU_2016_tetris/src/
-**
-** Made by Simon LEJEUNE
-** Login   <simon.lejeune@epitech.eu>
-**
-** Started on  Tue Feb 21 15:28:29 2017 Simon LEJEUNE
-** Last update Tue Feb 21 15:28:37 2017 Simon LEJEUNE
+** functions.c for tetris in /home/heroin/delivery/PSU/PSU_2016_tetris/src
+** 
+** Made by Heroin
+** Login   <victor.herouin@epitech.eu>
+** 
+** Started on  Mon Feb 27 13:30:09 2017 Heroin
+** Last update Wed Mar  8 15:09:27 2017 Heroin
 */
+#include "../include/my.h"
 
-#include <unistd.h>
-
-void	my_putchar(char c)
+int	my_strlen(char *str)
 {
-  write(1, &c, 1);
+  int	i;
+
+  i = 0;
+  while (str[i] != '\0')
+    i++;
+  return (i);
 }
 
 void	my_putstr(char *str)
@@ -22,7 +26,7 @@ void	my_putstr(char *str)
   i = 0;
   while (str[i] != '\0')
     {
-      my_putchar(str[i]);
+      write(1, &str[i], 1);
       i++;
     }
 }
