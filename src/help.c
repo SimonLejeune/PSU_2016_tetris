@@ -5,7 +5,7 @@
 ** Login   <simon.lejeune@epitech.eu>
 **
 ** Started on  Fri Mar 17 11:50:15 2017 Simon LEJEUNE
-** Last update Fri Mar 17 14:12:20 2017 Simon LEJEUNE
+** Last update Fri Mar 17 14:20:41 2017 Simon LEJEUNE
 */
 
 #include "my.h"
@@ -14,15 +14,15 @@ void	help()
 {
   my_putstr("Usage:\t./tetris [options]\n");
   my_putstr("Options:\n");
-  my_putstr("\t--help");
-  my_putstr("\t-l --level={num}");
-  my_putstr("\t-kl --key-left={K}");
-  my_putstr("\t-kr --key-right={K}");
-  my_putstr("\t-kt --key-turn={K}");
-  my_putstr("\t-kd --key-drop={K}");
-  my_putstr("\t-kq --key-quit={K}");
-  my_putstr("\t-kp --key-pause={K}");
-  my_putstr("\t--map-size={row,col}");
-  my_putstr("\t-w --without-next");
-  my_putstr("\t-d --debug");
+  my_putstr("   --help\n");
+  my_putstr("   -l --level={num}\n");
+  my_putstr("   -kl --key-left={K}\n");
+  my_putstr("   -kr --key-right={K}\n");
+  my_putstr("   -kt --key-turn={K}\n");
+  my_putstr("   -kd --key-drop={K}\n");
+  my_putstr("   -kq --key-quit={K}\n");
+  my_putstr("   -kp --key-pause={K}\n");
+  my_putstr("   --map-size={row,col}\n");
+  my_putstr("   -w --without-next\n");
+  my_putstr("   -d --debug\n");
 }
