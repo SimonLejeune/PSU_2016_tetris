@@ -5,8 +5,10 @@
 ** Login   <victor.herouin@epitech.eu>
 ** 
 ** Started on  Mon Feb 27 13:30:09 2017 Heroin
-** Last update Wed Mar  8 15:09:27 2017 Heroin
+** Last update Fri Mar 17 14:12:41 2017 Simon LEJEUNE
 */
+
+#include <unistd.h>
 #include "../include/my.h"
 
 int	my_strlen(char *str)

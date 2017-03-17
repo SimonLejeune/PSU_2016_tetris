@@ -5,25 +5,10 @@
 ** Login   <simon.lejeune@epitech.eu>
 **
 ** Started on  Fri Mar 17 11:50:15 2017 Simon LEJEUNE
-** Last update Fri Mar 17 13:59:01 2017 Simon LEJEUNE
+** Last update Fri Mar 17 14:12:20 2017 Simon LEJEUNE
 */
 
-void	my_putchar(char c)
-{
-  write(1, &c, 1);
-}
-
-void	my_putstr(char *str)
-{
-  int	i;
-
-  i = 0;
-  while (str[i] != '\0')
-    {
-      my_putchar(str[i]);
-      i++;
-    }
-}
+#include "my.h"
 
 void	help()
 {

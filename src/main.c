@@ -5,7 +5,7 @@
 ** Login   <victor.herouin@epitech.eu>
 **
 ** Started on  Tue Feb 21 09:46:18 2017 Heroin
-** Last update Fri Mar 17 14:01:32 2017 Simon LEJEUNE
+** Last update Fri Mar 17 14:11:06 2017 Simon LEJEUNE
 */
 #include <stdlib.h>
 #include <unistd.h>
@@ -71,7 +71,7 @@ int	is_it_tetri(char *name)
 
 int	main(int ac, char **av)
 {
-      if (av[1][0] == "-" && av[1][1] == "-" && av[1][2] == "h")
+      if (av[1][0] == '-' && av[1][1] == '-' && av[1][2] == 'h')
 	help();
   else if (ac > 1)
     debug_mode(ac, av);

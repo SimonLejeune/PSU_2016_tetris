@@ -5,13 +5,16 @@
 ## Login   <victor.herouin@epitech.eu>
 ## 
 ## Started on  Tue Feb 21 09:40:24 2017 Heroin
-## Last update Mon Mar  6 16:54:44 2017 Heroin
+## Last update Fri Mar 17 14:13:18 2017 Simon LEJEUNE
 ##
 SRC		=	src/main.c		\
 			src/functions.c		\
 			src/check_tetriminos.c	\
+			src/help.c
 
 OBJ		=	$(SRC:.c=.o)
+
+CFLAGS		=	-I ./include
 
 NAME		=	tetris
 
@@ -19,9 +22,9 @@ all		:	$(OBJ)
 			gcc -o $(NAME) $(OBJ) -lncurses -L. -lgnl
 
 clean		:
-			rm $(OBJ)
+			rm -f $(OBJ)
 
 fclean		:	clean
-			rm $(NAME)
+			rm -f $(NAME)
 
 re		:	fclean all
