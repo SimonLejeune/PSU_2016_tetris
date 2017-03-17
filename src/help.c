@@ -5,7 +5,7 @@
 ** Login   <simon.lejeune@epitech.eu>
 **
 ** Started on  Fri Mar 17 11:50:15 2017 Simon LEJEUNE
-** Last update Fri Mar 17 14:51:50 2017 Simon LEJEUNE
+** Last update Fri Mar 17 14:52:24 2017 Simon LEJEUNE
 */
 
 #include "my.h"
@@ -29,7 +29,7 @@ void	help()
   my_putstr("   -kp --key-pause={K}\tPAUSE/RESTART the game using the K key ");
   my_putstr("(def: space bar)\n");
   my_putstr("   --map-size={row,col}\tSet the numbers of rows and columns ");
-  my_putstr("of the map (def: 20,10)\n")
+  my_putstr("of the map (def: 20,10)\n");
   my_putstr("   -w --without-next\tHide next tetrimino (def: false)\n");
   my_putstr("   -d --debug\t\tDebug mode (def: false)\n");
 }
