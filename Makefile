@@ -5,7 +5,7 @@
 ## Login   <victor.herouin@epitech.eu>
 ## 
 ## Started on  Tue Feb 21 09:40:24 2017 Heroin
-## Last update Fri Mar 17 14:13:18 2017 Simon LEJEUNE
+## Last update Sun Mar 19 20:05:50 2017 Simon LEJEUNE
 ##
 SRC		=	src/main.c		\
 			src/functions.c		\
@@ -14,7 +14,7 @@ SRC		=	src/main.c		\
 
 OBJ		=	$(SRC:.c=.o)
 
-CFLAGS		=	-I ./include
+CFLAGS		=	-g -I ./include
 
 NAME		=	tetris
 

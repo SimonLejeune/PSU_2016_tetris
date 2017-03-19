@@ -5,7 +5,7 @@
 ** Login   <victor.herouin@epitech.eu>
 ** 
 ** Started on  Mon Feb 27 16:03:34 2017 Heroin
-** Last update Thu Mar 16 15:40:44 2017 Heroin
+** Last update Sun Mar 19 21:49:40 2017 Simon LEJEUNE
 */
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -23,22 +23,26 @@ int	check_width(int fd)
   char	*width;
 
   a = 0;
-  str = malloc(sizeof(char) * 20);
+  if ((str = malloc(sizeof(char) * 20)) == NULL)
+    return (0);
   str = get_next_line(fd);
-  width = malloc(sizeof(char) * 10);
-  printf("str = %s\n", str);
-  while (str[a] != ' ')
+  if ((width = malloc(sizeof(char) * 10)) == NULL)
+    return (0);
+  my_putstr("str = ");
+  my_putstr(str);
+  my_putchar('\n');
+  while (str[a] != '\n' && str[a] != '\0')
     {
       width[a] = str[a];
       a++;
     }
 }
 
-char    *str_cat(char *str1, char *str2)
+char	*my_str_cat(char *str1, char *str2)
 {
-  int   i;
-  int   j;
-  char *str;
+  int	i;
+  int	j;
+  char	*str;
 
   i = 0;
   j = 0;
@@ -54,7 +58,7 @@ char    *str_cat(char *str1, char *str2)
       j++;
       i++;
     }
-  return(str);
+  return (str);
 }
 
 int	check_tetrimino()
@@ -66,15 +70,22 @@ int	check_tetrimino()
 
   dir = opendir("tetrimino/");
   if (dir == NULL)
-    return(84);
+    return (84);
   while ((sdir = readdir(dir)) != NULL)
     {
       if (sdir->d_name[0] != '.')
-	path = str_cat("tetrimino/", sdir->d_name);
-      if ((fd = open(path, O_RDONLY)) != -1)
 	{
-	  printf("sname = %s\n", path);
-	  check_width(fd);
+	  if ((path = malloc(sizeof(char) *
+			     (my_strlen(sdir->d_name) + 11))) == NULL)
+	    return (0);
+	  path = my_str_cat("tetrimino/", sdir->d_name);
+	  if ((fd = open(path, O_RDONLY)) != -1)
+	    {
+	      my_putstr("sname = ");
+	      my_putstr(path);
+	      my_putchar('\n');
+	      check_width(fd);
+	    }
 	}
     }
 }

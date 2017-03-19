@@ -5,11 +5,16 @@
 ** Login   <victor.herouin@epitech.eu>
 ** 
 ** Started on  Mon Feb 27 13:30:09 2017 Heroin
-** Last update Fri Mar 17 14:12:41 2017 Simon LEJEUNE
+** Last update Sun Mar 19 21:04:16 2017 Simon LEJEUNE
 */
 
 #include <unistd.h>
 #include "../include/my.h"
+
+void	my_putchar(char c)
+{
+  write (1, &c, 1);
+}
 
 int	my_strlen(char *str)
 {

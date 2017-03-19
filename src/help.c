@@ -5,7 +5,7 @@
 ** Login   <simon.lejeune@epitech.eu>
 **
 ** Started on  Fri Mar 17 11:50:15 2017 Simon LEJEUNE
-** Last update Fri Mar 17 14:52:24 2017 Simon LEJEUNE
+** Last update Sun Mar 19 21:47:43 2017 Simon LEJEUNE
 */
 
 #include "my.h"
@@ -18,7 +18,8 @@ void	help()
   my_putstr("   -l --level={num}\tStart Tetris at level num (def: 1)\n");
   my_putstr("   -kl --key-left={K}\tMove the tetrimino LEFT using the K key ");
   my_putstr("(def: left arrow)\n");
-  my_putstr("   -kr --key-right={K}\tMove the tetrimino RIGHT using the K key ");
+  my_putstr("   -kr --key-right={K}\tMove the tetrimino ");
+  my_putstr("RIGHT using the K key ");
   my_putstr("(def: right arrow)\n");
   my_putstr("   -kt --key-turn={K}\tTURN the tetrimino clockwise 90d using ");
   my_putstr("the K key (def: top arrow)\n");
