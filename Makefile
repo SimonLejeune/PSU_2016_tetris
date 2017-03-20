@@ -14,7 +14,7 @@ SRC		=	src/main.c		\
 
 OBJ		=	$(SRC:.c=.o)
 
-CFLAGS		=	-g -I ./include
+CFLAGS		=	-I ./include
 
 NAME		=	tetris
 
